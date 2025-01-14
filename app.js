@@ -23,7 +23,7 @@ app.post('/usuarios', (req, res) => {
         lugarProcedencia: req.body.lugarProcedencia,
     };
     usuarios.push(nuevoUsuario);
-    res.json(nuevoUsuario);
+    res.redirect('/usuarios');
 });
 
 //LEER
